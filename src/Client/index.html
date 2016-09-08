@@ -15,6 +15,7 @@
     <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="Assets/css/hospital.css" rel="stylesheet">
     <link href="Assets/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="Assets/css/side-navbar.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
@@ -41,17 +42,18 @@
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
-                        <img style="clear:both" class="img-responsive" alt="Brand" src="Assets/img/mstile-150x150.png">
-                    </a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                    </button>
 
-                    <a class="navbar-brand" href="index.html">Gurukripa</a>
+                    <a class="navbar-brand1" href="index.html">
+                        <img style="clear:both" class="img-responsive" alt="Brand" src="Assets/img/mstile-70x70.png">
+                    </a>
+
 
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,9 +66,9 @@
                             <a href="contactus.html">Contact</a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <ul class="nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -103,6 +105,34 @@
                 </ul>
             </div>
         </div>-->
+
+
+      <div class="pos">
+        <div class="material-button-anim">
+          <ul class="list-inline" id="options">
+            <li class="option">
+              <button class="material-button option1" type="button">
+               <a href="newAppointment.html">  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option2" type="button">
+               <a href="appointment.html"> <span class="glyphicon glyphicon-time" aria-hidden="true"></span></a>
+              </button>
+            </li>
+            <li class="option">
+              <button class="material-button option3" type="button">
+                <a href="report.html"> <span class="fa fa-book fa-fw" aria-hidden="true"></span></a>
+              </button>
+            </li>
+          </ul>
+          <button class="material-button material-button-toggle" type="button">
+                    <span class="fa fa-plus" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+	
+
         <section class="team">
             <div class="container">
                 <div class="row">
@@ -150,7 +180,7 @@
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
                                     <div class="img-box">
-                                        <img src="Assets/img/Doctors/3.jpg" class="img-responsive resize" >
+                                        <img src="Assets/img/Doctors/3.jpg" class="img-responsive resize">
                                         <ul class="text-center">
                                             <a href="#">
                                                 <li><i class="fa fa-facebook"></i></li>
@@ -345,12 +375,9 @@
             </div>
         </section>
         <footer>
-            <div class="container">
-                <div class="col-md-10 col-md-offset-1 text-center">
-
-                    <!--<h6>Coded with <i class="fa fa-heart red"></i> by <a href="http://www.nabeel.co.in" target="_blank">Nabeel Kondotty</a></h6>-->
-                </div>
-            </div>
+            <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+             <a class="navbar-brand" href="index.html"> <span aria-hidden="true"></span>Gurukripa</a>
+            </nav>     
         </footer>
         <!-- /.row -->
 
@@ -362,6 +389,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/hospital.js"></script>
 
 </body>
 
